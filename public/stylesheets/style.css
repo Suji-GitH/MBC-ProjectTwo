@@ -1,0 +1,267 @@
+/* Background */
+body {
+  background: url(../img/ChatBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+a {
+  /* padding : 3%; */
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: x-large;
+
+}
+/* Logo */
+#logo {
+  transform: scale(0.3, 0.3);
+  position: absolute;
+  left: -150px;
+  top: -30px;
+}
+
+/* Welcome & Sign Out font */
+h2, a, .sideLink {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration-style: none;
+}
+
+.container {
+  max-width: 100vw;
+  padding: 0px;
+  line-height: 1.5;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  padding: 1rem;
+}
+
+/* sidebar */
+
+.sidebar {
+  background:url(../img/MistBackground.jpg);
+  flex: 1;
+  padding: 15px 0px 15px 0px;
+}
+
+.sideMenu {
+  margin-top: 60px;
+  color: black;
+  height: 85vh;
+  width: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.sideLink {
+  font-weight: bolder;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.userList {
+  padding: 10px;
+}
+
+
+/* Chat Area */
+
+.main {
+  flex: 6;
+  text-align: center;
+}
+
+.chat {
+  position: inherit;
+  bottom: 60px;
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 65vh;
+  overflow-y: scroll;
+  padding-right: 20px;
+
+}
+
+/* Landing Messages */
+
+.chatStatus {
+font-weight:  bolder;
+font-family: 'Julius Sans One', sans-serif;
+}
+
+.popupMessages {
+  color: cadetblue;
+  font-family: 'Julius Sans One', sans-serif;
+  height: 200px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.statusHeader {
+	animation: pulse-white 3s infinite;
+}
+
+@keyframes pulse-white {
+	0% {
+		transform: scale(0.9);
+	}
+	
+	70% {
+		transform: scale(0.95);
+	}
+	
+	100% {
+		transform: scale(0.9);
+	}
+}
+
+.return {
+  text-align: left;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+}
+
+
+/* User Typing Preview */
+.message.typing .messageBody {
+  color: gray;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+/* User Input Message Box */
+
+.inputMessage {
+  font-size: 100%;
+  border: 3px solid black;;
+  bottom: 0;
+  height: 10vh;
+  left: 0;
+  outline: none;
+  padding-left: 10px;
+  position: fixed;
+  right: 0;
+  width: 100vw;
+}
+
+/* Fix user-agent */
+
+li {
+  list-style:none;
+  font-size: large;
+  padding-bottom: 5px;
+}
+
+.userList:hover {
+  text-decoration: none;
+  color: floralwhite;
+  border-left: solid white;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+/* Profile modal */
+.modal-header {
+  display: block;
+  border: none;
+  text-align: center;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0px 16px 0px 16px;
+  color: floralwhite;
+  background:rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+#avatar, #avatar2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px 50px 50px 50px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#uploadForm {
+  display: flex;
+  padding: 1em;
+  color: white;
+}
+
+#uploadBtn {
+  display: contents;
+}
+
+.uploadBtn:hover {
+  border: solid;
+  border-color: white;
+  background: none;
+  color: white;
+}
+
+.col-form-label {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.form-control {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.2s ease-out;
+}
+
+.modal-footer {
+border: none;
+}
+
+.btn-light {
+  margin-right: 20px;
+  background: transparent;
+  color: floralwhite;
+  float: right;
+}
